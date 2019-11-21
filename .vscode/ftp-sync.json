@@ -1,0 +1,27 @@
+{
+    "remotePath": "./public_html/",
+    "host": "45.34.12.250",
+    "username": "k8n30cdx",
+    "password": "19iG97dMyl",
+    "port": 21,
+    "secure": false,
+    "protocol": "ftp",
+    "uploadOnSave": true,
+    "passive": false,
+    "debug": false,
+    "privateKeyPath": null,
+    "passphrase": null,
+    "agent": null,
+    "allow": [],
+    "ignore": [
+        "\\.vscode",
+        "\\.git",
+        "\\.DS_Store"
+    ],
+    "generatedFiles": {
+        "extensionsToInclude": [
+            ""
+        ],
+        "path": ""
+    }
+}
