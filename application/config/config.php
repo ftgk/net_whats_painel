@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
-$config['base_url'] = 'http://agendanet.cf/';
+$config['base_url'] = 'http://localhost/net_whats_painel/';
 
 /*
 |--------------------------------------------------------------------------

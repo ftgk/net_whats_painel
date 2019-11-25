@@ -9,7 +9,7 @@ class Agenda extends MY_Controller {
     }
 
     public function index(){
-        $data['agenda'] = $this->agm->Busca_Agenda();
+        $data['agenda'] = $this->agm->Busca_Prontos();
         $data['view'] = 'agenda/index';
         $this->load->view('admin/layout', $data);
     }
@@ -20,25 +20,20 @@ class Agenda extends MY_Controller {
         $this->load->view('admin/layout', $data);
     }
 
-    function agendap_data(){
-        $data=$this->agm->lista_agendas();
-        echo json_encode($data);
+    public function editcontrato($id){
+        $data['dadoscli'] = $this->agm->Edit_Cliente($id);
+        $data['view'] = 'agenda/editar_contrato';
+        $this->load->view('admin/layout', $data);
     }
- 
-    function agendap_save(){
-        $data=$this->agm->save_product();
-        echo json_encode($data);
+
+    public function salvarcontrato($id=null){
+        if (isset($id)){
+//            var_dump($this->input->post());
+            $this->agm->Salvar_Contrato($id);
+            redirect("agenda/editcontrato/$id");
+        }
     }
- 
-    function agendap_update(){
-        $data=$this->agm->update_product();
-        echo json_encode($data);
-    }
- 
-    function agendap_delete(){
-        $data=$this->agm->delete_product();
-        echo json_encode($data);
-    }
+
  
 
 }

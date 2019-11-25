@@ -65,12 +65,12 @@ $cur_tab = $this->uri->segment(2) == '' ? 'dashboard' : $this->uri->segment(2);
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li id="agpendencias1"><a href="<?= base_url('agenda'); ?>"><i class="fa fa-circle-o"></i>
+                    <li id="agpendencias1"><a href="<?= base_url('agenda/pendencias'); ?>"><i class="fa fa-circle-o"></i>
                             Agenda Futura</a></li>
                 </ul>
                 <ul class="treeview-menu">
-                    <li id="agpendencias1"><a href="<?= base_url('agenda/pendencias'); ?>"><i class="fa fa-circle-o"></i>
-                            Pendencias Agenda</a></li>
+                    <li id="agpendencias1"><a href="<?= base_url('agenda'); ?>"><i class="fa fa-circle-o"></i>
+                            Pronto Envio</a></li>
                 </ul>
             </li>
         </ul>
