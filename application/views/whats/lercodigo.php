@@ -27,10 +27,10 @@
 
 
             <div class="style1">
-                <IMG src="http://dev.servtv.com.br/whats/assets/img/whats.jpg" border="1" name="refresh">
+                <IMG src="<?php site_url()?>/assets/img/whats.jpg" border="1" name="refresh">
                 <SCRIPT language="JavaScript" type="text/javascript">
                     var t = 3 // Interval in Seconds
-                    image = "http://dev.servtv.com.br/whats/assets/img/whats.jpg" //URL of the Image
+                    image = "<?php site_url()?>/assets/img/whats.jpg" //URL of the Image
                     function Start() {
                         tmp = new Date();
                         tmp = "?"+tmp.getTime()
